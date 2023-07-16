@@ -130,12 +130,13 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="nodePositioner.cpp" />
     <ClCompile Include="subjectNode.cpp" />
+    <ClCompile Include="vectorReaderFunc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="compEnum.h" />
     <ClInclude Include="nodePositioner.h" />
     <ClInclude Include="subjectNode.h" />
-    <ClInclude Include="vectorReaderStruct.h" />
+    <ClInclude Include="vectorReaderFunc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

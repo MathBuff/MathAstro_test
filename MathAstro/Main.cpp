@@ -1,11 +1,11 @@
 #include <iostream>
-#include <stdlib.h>
 #include <vector>
-#include"vectorReaderStruct.h"
+#include <stdlib.h>
+#include"vectorReaderFunc.h"
 //I fucking hate them
 int main() { 
-	std::cout << "Math Astro Program Start up...";
-	std::vector<std::string> penis;
+	std::cout << "Math Astro Program Start up..." << std::endl;
+	mAstroTest::stringVectDupeCheck();
 
 }
 

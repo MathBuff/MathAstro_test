@@ -24,6 +24,9 @@
     <ClCompile Include="subjectNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vectorReaderFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="subjectNode.h">
@@ -35,7 +38,7 @@
     <ClInclude Include="nodePositioner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vectorReaderStruct.h">
+    <ClInclude Include="vectorReaderFunc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

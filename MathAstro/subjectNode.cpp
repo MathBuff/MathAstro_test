@@ -1,4 +1,5 @@
 #include "subjectNode.h"
+#include "vectorReaderFunc.h"
 
 //=========================================================
 std::string subjectNode::getTitle()
@@ -28,8 +29,15 @@ to a vector in memory.
 We  need to make it so you cant add a child more than
 once.
 */
+
 void subjectNode::addChild(std::string input) 
 {
+    if (mAstro::stringVectDupeCheck(childNames, input)) {
+        std::cout << "Erroneous Input: "<< input <<" already is a child of " << title;
+        return;
+    }
+
+
 
 }
 
