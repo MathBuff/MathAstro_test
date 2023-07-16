@@ -30,24 +30,32 @@ We  need to make it so you cant add a child more than
 once.
 */
 
-void subjectNode::addChild(std::string input) 
+bool subjectNode::addChild(std::string input) 
 {
     if (mAstro::stringVectDupeCheck(childNames, input)) {
         std::cout << "Erroneous Input: "<< input <<" already is a child of " << title;
-        return;
+        return 0;
     }
-
-
-
+    else {
+        childNames.push_back(input);
+        std::cout << input << " added as a child to " << title;
+        return 1;
+    }
 }
 
 void subjectNode::removeChild(int childNum) 
 {
+    childNames.erase(childNames.begin() + childNum - 1);
 }
 
 std::string subjectNode::getChild(int childNum) 
 {
-    return std::string();
+    return childNames[childNum];
+}
+
+int subjectNode::getNumberofChildren()
+{
+    return childNames.size();
 }
 
 //Taxonomy Tag Memory======================================

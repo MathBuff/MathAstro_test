@@ -20,9 +20,11 @@ public:
     void setLink(std::string input);
     std::string getLink();
 
-    void addChild(std::string input);
+    bool addChild(std::string input);
+        //Returns false if child already exists
     void removeChild(int childNum);
     std::string getChild(int childNum);
+    int getNumberofChildren();
 
     void addTaxTag(std::string input);
     void removeTaxTag(int taxNum);

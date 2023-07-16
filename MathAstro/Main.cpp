@@ -5,7 +5,10 @@
 //I fucking hate them
 int main() { 
 	std::cout << "Math Astro Program Start up..." << std::endl;
-	mAstroTest::stringVectDupeCheck();
+
+	mAstroTest::removeStringVectEleAtPosition();
+
+	return 0;
 
 }
 
