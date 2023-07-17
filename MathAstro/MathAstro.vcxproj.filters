@@ -30,6 +30,9 @@
     <ClCompile Include="MAConsoleUIFunct.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MAKeyReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="compEnum.h">
@@ -45,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MAConsoleUIFunct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MAKeyReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

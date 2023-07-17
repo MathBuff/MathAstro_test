@@ -129,12 +129,14 @@
   <ItemGroup>
     <ClCompile Include="MAConsoleUIFunct.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MAKeyReader.cpp" />
     <ClCompile Include="nodePositioner.cpp" />
     <ClCompile Include="subjectNode.cpp" />
     <ClCompile Include="vectorReaderFunc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="compEnum.h" />
+    <ClInclude Include="MAKeyReader.h" />
     <ClInclude Include="MAConsoleUIFunct.h" />
     <ClInclude Include="nodePositioner.h" />
     <ClInclude Include="subjectNode.h" />

@@ -1,41 +1,20 @@
 #include <iostream>
 #include <vector>
 #include <stdlib.h>
-#include <conio.h>
 #include"vectorReaderFunc.h"
 #include "MAConsoleUIFunct.h"
-//I fucking hate them
+#include "MAKeyReader.h"
 
-#include <iostream>
-#include <conio.h>
 int main() { 
-    int input;
-    input = _getch();
-    std::cout << input;
-    input = _getch();
-    std::cout << input;
+    //std::cout << mAstroKeys::keyInReturn()<< std::endl;
+    std::cout << mAstroKeys::ctrlShiftKeyInput() << std::endl;
+
+    
+   
 }
 
 /*
-      bool loop = true;
-    while (loop) {
-        int ch = _getch();
-        if (ch == 224) {
-            ch = _getch();
-            switch (ch) {
-            case 72: std::cout << "up\n";    break;
-            case 80: std::cout << "down\n";  break;
-            case 77: std::cout << "right\n"; break;
-            case 75: std::cout << "left\n";  break;
-            default: std::cout << "idk\n";
-            }
-        }
-        else {
-            std::cout << char(ch) << '\n';
-            if (char(ch) == 'q')
-                loop = false;
-        }
-    }
+     
     */
 
 /*
