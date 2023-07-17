@@ -5,6 +5,16 @@ namespace mAstroKeys {
 	std::string basicKeyIdentify();
 	bool shiftCheck();
 	bool ctrlCheck();
-	std::string ctrlShiftKeyInput();
+	void keyInt2ByteConsOutputer();
+
+	std::string shiftKeyInput();
+	/*
+	shiftKeyInput is Able to read
+	INS,HM,PU,DEL,END,PD
+	Arrow Keys
+	All the normal keys
+	Explicit shift+nonshiftable
+	All shift
+	*/
 }
 #endif
