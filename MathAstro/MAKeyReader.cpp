@@ -1,23 +1,8 @@
-#include <iostream>
-#include <vector>
-#include <stdlib.h>
+#include "MAKeyReader.h"
 #include <conio.h>
-#include"vectorReaderFunc.h"
-#include "MAConsoleUIFunct.h"
-//I fucking hate them
-
-#include <iostream>
-#include <conio.h>
-int main() { 
-    int input;
-    input = _getch();
-    std::cout << input;
-    input = _getch();
-    std::cout << input;
-}
-
-/*
-      bool loop = true;
+int mAstroKeys::keyInReturn()
+{
+    bool loop = true;
     while (loop) {
         int ch = _getch();
         if (ch == 224) {
@@ -36,10 +21,5 @@ int main() {
                 loop = false;
         }
     }
-    */
-
-/*
-*Rainy day code*
-std::system("cls");
-std::cout << "I'm back";
-*/
+    return 0;
+}

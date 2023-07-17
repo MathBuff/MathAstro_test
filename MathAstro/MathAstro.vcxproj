@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MAConsoleUIFunct.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="nodePositioner.cpp" />
     <ClCompile Include="subjectNode.cpp" />
@@ -134,6 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="compEnum.h" />
+    <ClInclude Include="MAConsoleUIFunct.h" />
     <ClInclude Include="nodePositioner.h" />
     <ClInclude Include="subjectNode.h" />
     <ClInclude Include="vectorReaderFunc.h" />

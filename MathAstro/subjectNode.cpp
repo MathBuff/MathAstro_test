@@ -23,7 +23,7 @@ std::string subjectNode::getLink()
     return link;
 }
 
-//Children Memory=========================================
+//CHILDREN MEMORY MANIPULATION===========================
 /*This function has got to add a child node via its name
 to a vector in memory.
 We  need to make it so you cant add a child more than
@@ -45,7 +45,7 @@ bool subjectNode::addChild(std::string input)
 
 void subjectNode::removeChild(int childNum) 
 {
-    childNames.erase(childNames.begin() + childNum - 1);
+    mAstro::removeStringVectEleAtPosition(childNames, childNum);
 }
 
 std::string subjectNode::getChild(int childNum) 
@@ -59,18 +59,33 @@ int subjectNode::getNumberofChildren()
 }
 
 //Taxonomy Tag Memory======================================
-void subjectNode::addTaxTag(std::string input) 
+bool subjectNode::addTaxTag(std::string input) 
 {
+    if (mAstro::stringVectDupeCheck(taxTags, input)) {
+        std::cout << "Erroneous Input: " << input << " already is a tag of " << title;
+        return 0;
+    }
+    else {
+        taxTags.push_back(input);
+        std::cout << input << " added as a tag for " << title;
+        return 1;
+    }
 
 }
 
 void subjectNode::removeTaxTag(int taxNum) 
 {
+    mAstro::removeStringVectEleAtPosition(taxTags, taxNum);
 }
 
 std::string subjectNode::getTaxTag(int taxNum) 
 {
     return std::string();
+}
+
+int subjectNode::getNumberofTaxTags()
+{
+    return taxTags.size();
 }
 
 //=========================================================
@@ -82,4 +97,19 @@ void subjectNode::setCompTag(compStatus input)
 compStatus subjectNode::getCompTag()
 {
     return compTag;
+}
+
+void subjectNode::setCompTagIncomplete()
+{
+    setCompTag(compStatus::inProgress);
+}
+
+void subjectNode::setCompTagComplete()
+{
+    setCompTag(compStatus::complete);
+}
+
+void subjectNode::setCompTagStub()
+{
+    setCompTag(compStatus::stub);
 }
