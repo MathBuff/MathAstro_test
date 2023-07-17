@@ -7,9 +7,9 @@
 
 int main() { 
     //mAstroCUI::memeableStartUp();
-    //std::cout << mAstroKeys::keyInReturn()<< std::endl;
     
     //std::cout << mAstroKeys::shiftKeyInput() << std::endl;
+    std::cout << mAstroKeys::MAGetConsoleKeyInput() << std::endl;
     //mAstroKeys::keyInt2ByteConsOutputer();
 
     //delete is 22483
