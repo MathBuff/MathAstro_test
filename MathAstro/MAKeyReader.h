@@ -14,7 +14,8 @@ namespace mAstroKeys {
 	Arrow Keys
 	All the normal keys
 	Explicit shift+nonshiftable
-	All shift
+	All shiftable keys, but are stated
+	as shift+@ for example.
 	*/
 }
 #endif
