@@ -53,7 +53,7 @@
     <ClInclude Include="MAKeyReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MASubjectNodeManager.h">
+    <ClInclude Include="MASubNodMemMang.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

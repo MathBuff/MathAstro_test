@@ -1,12 +1,26 @@
 #include <iostream>
 #include "subjectNode.h"
-#ifndef _M_A_SUBJECTNODEMANAGER_H
-#define _M_A_SUBJECTNODEMANAGER_H
+#ifndef _M_A_SUBJECTNODEMEMORYMANAGER_H
+#define _M_A_SUBJECTNODEMEMORYMANAGER_H
 
-class subjectNodeManager {
+class subjectNodeMemoryManager {
 private:
 	std::vector<subjectNode> activeSubjectNodes;
+		//order matters, location reflects order
 	std::vector<subjectNode> recyclerSubjectNodes;
+		/*
+			Order of nodes is from most recent to
+			oldest addition
+
+			Each element contains a coordinating 
+			parent name.
+
+			Each element contains a coordinating pos
+			which it held before removal.
+
+			When an element is removed
+
+		*/
 
 public:
 
@@ -48,7 +62,17 @@ public:
 	subjectNode nodeRecyclerRemoveAction(int recyclerLocation);
 		/*Takes a subNode from recycler, and returns it*/
 
-//TRANSFER=============================================================
+//TRANSFERS=============================================================
+
+	void nodeActiveToRecycler(int activeLocation, int recyclerLocation = -1);
+		/* Takes positions in active and recycler, and moves node 
+		from one to other. If recycler location not specified, 
+		it gets put onto the bottem of the recycler*/
+
+	void nodeRecyclerToActive(int  recyclerLocation, int activeLocation = -1);
+		/* Takes positions in recycler and active, and moves node
+		from one to other. If active location not specified,
+		it gets put onto the bottem of the recycler*/
 
 //DELETERS===============================================================
 

@@ -138,7 +138,7 @@
     <ClInclude Include="compEnum.h" />
     <ClInclude Include="MAKeyReader.h" />
     <ClInclude Include="MAConsoleUIFunct.h" />
-    <ClInclude Include="MASubjectNodeManager.h" />
+    <ClInclude Include="MASubNodMemMang.h" />
     <ClInclude Include="nodePositioner.h" />
     <ClInclude Include="subjectNode.h" />
     <ClInclude Include="vectorReaderFunc.h" />
