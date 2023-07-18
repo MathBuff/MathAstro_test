@@ -45,4 +45,8 @@ namespace mAstroKeys {
 	if its not valid, it simply loops.
 	*/
 }
+namespace mAstroKeysTEST {
+	void MAGetConsoleKeyInput();
+	
+}
 #endif

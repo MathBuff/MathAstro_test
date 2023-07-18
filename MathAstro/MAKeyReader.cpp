@@ -57,8 +57,26 @@ std::string mAstroKeys::basicKeyIdentify() {
     }
     else if (ctrlCheck()){
         switch (ch) { //ctrl Key read in
+            case 1:
+                return "ctrl+a";
+                break;
+            case 2:
+                return "ctrl+b";
+                break;
+            case 3:
+                return "ctrl+c";
+                break;
+            case 6:
+                return "ctrl+f";
+                break;
             case 19:
                 return "ctrl+s";
+                break;
+            case 22:
+                return "ctrl+v";
+                break;
+            case 24:
+                return "ctrl+x";
                 break;
 
             case 25:
@@ -76,6 +94,10 @@ std::string mAstroKeys::basicKeyIdentify() {
         }
     else if (ch < 33) {
         switch (ch) {
+        case 9:
+            return "tab";
+            break;
+
         case 8:
             return "backSpace";
             break;
@@ -161,3 +183,11 @@ void mAstroKeys::keyInt2ByteConsOutputer()
      std::cout << input;
 }
 
+void mAstroKeysTEST::MAGetConsoleKeyInput()
+{
+    std::string cancel = "x";
+    while (cancel != "escape") {
+        cancel = mAstroKeys::MAGetConsoleKeyInput();
+        std::cout << cancel << std::endl;
+    }
+}
