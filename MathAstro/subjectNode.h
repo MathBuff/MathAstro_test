@@ -7,9 +7,14 @@
 #define _SUBJECT_NODE_H_
 class subjectNode {
 private:
+    
     std::string title;
-    std::string link;
+    //std::string link;
+    std::vector<std::string> links;
+    std::vector<std::string> linkNames;
+
     std::vector<std::string> childNames;
+
     std::vector<std::string> taxTags;
     
     compStatus compTag;
@@ -19,7 +24,10 @@ public:
     std::string getTitle();
     void setTitle(std::string input);
 
-    void setLink(std::string input);
+    void addLink(std::string link,std::string linkName);
+        /*adds a link and name in coordinating positions
+        of links and linkNames lists*/
+
     std::string getLink();
 
     bool addChild(std::string input);

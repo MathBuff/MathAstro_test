@@ -76,9 +76,9 @@ public:
 
 //DELETERS===============================================================
 
+	void deleteActiveNode(int activeLocation);
 
-
-	
+	void deleteRecyclerNode(int recyclerLocation);
 
 };
 
