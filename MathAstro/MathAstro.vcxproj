@@ -130,6 +130,7 @@
     <ClCompile Include="MAConsoleUIFunct.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MAKeyReader.cpp" />
+    <ClCompile Include="MAWinConsTxtCol.cpp" />
     <ClCompile Include="nodePositioner.cpp" />
     <ClCompile Include="subjectNode.cpp" />
     <ClCompile Include="vectorReaderFunc.cpp" />
@@ -139,6 +140,7 @@
     <ClInclude Include="MAKeyReader.h" />
     <ClInclude Include="MAConsoleUIFunct.h" />
     <ClInclude Include="MASubNodMemMang.h" />
+    <ClInclude Include="MAWinConsTxtCol.h" />
     <ClInclude Include="nodePositioner.h" />
     <ClInclude Include="subjectNode.h" />
     <ClInclude Include="vectorReaderFunc.h" />

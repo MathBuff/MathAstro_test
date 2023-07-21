@@ -13,48 +13,81 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="MathAstroSource">
+      <UniqueIdentifier>{53c54580-a256-4bd5-b8ab-49875703c458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathAstroSource\MAConsole">
+      <UniqueIdentifier>{5363ef20-7793-4702-9a6b-10c16b69b871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathAstroSource\MAConsole\MAConsoleUIFunct">
+      <UniqueIdentifier>{5e0e7d8e-d4c4-4d5f-a713-4ac76683975b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathAstroSource\MAConsole\MAWinConsTxtCol">
+      <UniqueIdentifier>{8a3bf1be-d18b-498a-bdec-7879a28c8753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathAstroSource\MAKeyReader">
+      <UniqueIdentifier>{90462e47-9c92-4b68-b6c0-76f397f99618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathAstroSource\MAVectorReader">
+      <UniqueIdentifier>{c4433d16-98fb-4541-ac0b-04cd29c42c0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathAstroSource\MANodePositioner">
+      <UniqueIdentifier>{f7590563-4dd7-4946-9b32-18b3b262b459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathAstroSource\MAsubjectNode">
+      <UniqueIdentifier>{f69e3ef4-94a0-45e5-bb79-e25ab561de55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathAstroSource\GlobalData">
+      <UniqueIdentifier>{09ee7b86-a317-4f3f-9628-a1f841b9a006}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="nodePositioner.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="vectorReaderFunc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="subjectNode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MAConsoleUIFunct.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>MathAstroSource\MAConsole\MAConsoleUIFunct</Filter>
+    </ClCompile>
+    <ClCompile Include="MAWinConsTxtCol.cpp">
+      <Filter>MathAstroSource\MAConsole\MAWinConsTxtCol</Filter>
     </ClCompile>
     <ClCompile Include="MAKeyReader.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>MathAstroSource\MAKeyReader</Filter>
+    </ClCompile>
+    <ClCompile Include="vectorReaderFunc.cpp">
+      <Filter>MathAstroSource\MAVectorReader</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>MathAstroSource</Filter>
+    </ClCompile>
+    <ClCompile Include="nodePositioner.cpp">
+      <Filter>MathAstroSource\MANodePositioner</Filter>
+    </ClCompile>
+    <ClCompile Include="subjectNode.cpp">
+      <Filter>MathAstroSource\MAsubjectNode</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="compEnum.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="nodePositioner.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="vectorReaderFunc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="subjectNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MAConsoleUIFunct.h">
-      <Filter>Header Files</Filter>
+      <Filter>MathAstroSource\MAConsole\MAConsoleUIFunct</Filter>
+    </ClInclude>
+    <ClInclude Include="MAWinConsTxtCol.h">
+      <Filter>MathAstroSource\MAConsole\MAWinConsTxtCol</Filter>
     </ClInclude>
     <ClInclude Include="MAKeyReader.h">
-      <Filter>Header Files</Filter>
+      <Filter>MathAstroSource\MAKeyReader</Filter>
+    </ClInclude>
+    <ClInclude Include="vectorReaderFunc.h">
+      <Filter>MathAstroSource\MAVectorReader</Filter>
+    </ClInclude>
+    <ClInclude Include="nodePositioner.h">
+      <Filter>MathAstroSource\MANodePositioner</Filter>
+    </ClInclude>
+    <ClInclude Include="subjectNode.h">
+      <Filter>MathAstroSource\MAsubjectNode</Filter>
     </ClInclude>
     <ClInclude Include="MASubNodMemMang.h">
-      <Filter>Header Files</Filter>
+      <Filter>MathAstroSource</Filter>
+    </ClInclude>
+    <ClInclude Include="compEnum.h">
+      <Filter>MathAstroSource\GlobalData</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -7,47 +7,70 @@
 #define _SUBJECT_NODE_H_
 class subjectNode {
 private:
-    
-    std::string title;
-    //std::string link;
-    std::vector<std::string> links;
-    std::vector<std::string> linkNames;
+    //DATA_LISTS=================================================
+        std::string title;//TITLE_DATA
 
-    std::vector<std::string> childNames;
+        std::vector<std::string> links;//LINK_URL_DATA
+        std::vector<std::string> linkNames;//LINK_NAME_DATA
 
-    std::vector<std::string> taxTags;
+        std::vector<std::string> childNames;//CHILD_DATA
+
+        std::vector<std::string> taxTags;//TAXTAG_DATA
     
-    compStatus compTag;
-    void setCompTag(compStatus input);
+        compStatus compTag;//COMPTAG_DATA
 
 public:
-    std::string getTitle();
-    void setTitle(std::string input);
+    //TITLE_TOOLS================================================
+        std::string getTitle();
+        void setTitle(std::string input);
 
-    void addLink(std::string link,std::string linkName);
-        /*adds a link and name in coordinating positions
-        of links and linkNames lists*/
+    //LINK_TOOLS=================================================
 
-    std::string getLink();
+        int searchLinks(std::string linkName);
+      
+        void addLink(std::string link,std::string linkName, int itemPosition);
+            /*adds a link and name in coordinating positions
+            of links and linkNames lists*/
 
-    bool addChild(std::string input);
-        //Returns false if input child already exists
-    void removeChild(int childNum);
-    std::string getChild(int childNum);
-    int getNumberofChildren();
+        void removelink(int itemPosition);
 
-    bool addTaxTag(std::string input);
-        //returns false if input taxtag already exists
-    void removeTaxTag(int taxNum);
-    std::string getTaxTag(int taxNum);
-    int getNumberofTaxTags();
+        std::string getLink(int itemPosition);
 
-    compStatus getCompTag();
-    void setCompTagIncomplete();
-    void setCompTagComplete();
-    void setCompTagStub();
+    //CHILD_TOOLS================================================
+        bool addChild(std::string input);
+            //Returns false if input child already exists
 
-    nodePositioner location;
+        void removeChild(int childNum);
+
+        std::string getChild(int childNum);
+
+        int getNumberofChildren();
+
+        bool addTaxTag(std::string input);
+            //returns false if input taxtag already exists
+
+
+    //TAXTAG=====================================================
+
+        void setCompTag(compStatus input);
+
+        void removeTaxTag(int taxNum);
+
+        std::string getTaxTag(int taxNum);
+
+        int getNumberofTaxTags();
+
+    //COMPTAG=================================================
+        compStatus getCompTag();
+
+        void setCompTagIncomplete();
+
+        void setCompTagComplete();
+
+        void setCompTagStub();
+
+    //POSITION_DATA=============================================
+        nodePositioner location;
 };
 #endif
 

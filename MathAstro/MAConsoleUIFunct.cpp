@@ -1,4 +1,5 @@
 #include "MAConsoleUIFunct.h"
+#include "MAWinConsTxtCol.h"
 
 void mAstroCUI::memeableStartUp()
 {
