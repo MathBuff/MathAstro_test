@@ -11,10 +11,19 @@ std::string MAUtility::intToHexString(int your_int)
 
 char* MAUtility::stringToCstring(std::string your_String)
 {
-    std::string input;
-    char* g = new char[input.size() + 1];
-    std::copy(begin(input), end(input), g);
-    g[input.size()] = '\0';
-    //std::cout << "Your string is now a pointer to a c string of size: " << input.size();
-    return g;
+    std::string inputString;
+
+    char* cString = new char[inputString.size() + 1];
+
+    for (int i = 0; inputString.length();i++) {
+        cString[i]=inputString[i];
+        std::cout << cString[i];
+        cString[i] = NULL;
+
+    }
+    delete[] cString;
+        
+    return nullptr;
+
+    
 }

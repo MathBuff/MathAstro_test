@@ -1,8 +1,11 @@
 #include "MAConsoleUIFunct.h"
 #include "MA_W_C_ColorPrint.h"
-MA_W_C_Color_Print UIColors;
+MA_W_C_Color_Print UIColors(1);
+
 void mAstroCUI::memeableStartUp()
 {
+	system("color 8f");
+	system("cls");
 	mAstroCUI::mathAstroTitleScreen();
 	mAstroCUI::squidWardSecurityPage();
 }
@@ -14,68 +17,68 @@ void mAstroCUI::squidWardSecurityPage()
 	UIColors.printBrightCyan();
 	std::cout << "        .--'''''''''--." << std::endl; 
 	std::cout << "     .'      .---.      '.   ";
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "*******";
 	UIColors.printBrightRed();
 	std::cout << "Program Disclaimer";
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "********" << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "    [    .-----------.    ]  "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "SquidwardSecurity.exe" << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "   [        .-----.        ] "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "Is currently running for your" << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "   |       .-.   .-.       | "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "safety.Please use this program at" << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "   |      /   ] /   ]      | "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "your own risk." << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "    [    | .-. | .-. |    ]  "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "If you or a loved one suffers " << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "     '-._| | | | | | |_.-'   "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "from mesathilioma, you may be " << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "         | '-' | '-' |       "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "eligible for financial" << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "          |___/ |___/        "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "compensation." << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "       _.-'  |   |  `-._     " << std::endl;
 	std::cout << "     .' _.--|     |--._ '.   "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "If you experience seizures," << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "     ' _...-|     |-..._ '   "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "hallucinations, or immense " << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "            |     |          "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "property damage to materials" << std::endl;
 	UIColors.printBrightCyan();
 	std::cout << "            '.___.'          "; 
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << "or ";
 	UIColors.printRed();
 	std::cout << "organs";
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout << ", SquidwardSecurity" << std::endl;
 	std::cout << "                             "; 
 	std::cout << "systems cannot be held responsible" << std::endl;
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	system("pause");
 	system("cls");
 	
@@ -91,7 +94,7 @@ void mAstroCUI::mathAstroTitleScreen()
 	std::cout << "  | |}  /| |  `'_} : | |  | .-. |" << std::endl;
 	std::cout << " _| |_}/_| |_ // | |,| |, | | | |" << std::endl;
 	std::cout << "|_____||_____|}'-;__/}__/[___]|__]";
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	std::cout<<"                                     _" << std::endl;
 	std::cout << "     / }            / |_                                              (_)" << std::endl;
 	std::cout << "    / _ }     .--. `| |-'_ .--.   .--.   _ .--.   .--.   _ .--..--.   __   .---.   .--.   _ .--. " << std::endl;
@@ -101,7 +104,7 @@ void mAstroCUI::mathAstroTitleScreen()
 	std::cout << "" << std::endl;
 	std::cout << "" << std::endl;
 	std::cin;
-	UIColors.printDefaultWhite();
+	UIColors.printDefault();
 	system("pause");
 	system("cls");
 }

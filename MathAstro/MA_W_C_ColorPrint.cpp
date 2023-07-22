@@ -112,3 +112,10 @@ void MA_W_C_Color_Print::displayAllColors()
 		std::cout << "Color: " << P << std::endl;
 	}
 }
+
+void MA_W_C_Color_Print:: printDefault()
+{
+	int a = (defaultPrintColor + highLightColorNumModifier());
+	SetConsoleTextAttribute(h, a);
+
+}

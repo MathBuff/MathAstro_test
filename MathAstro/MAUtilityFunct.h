@@ -3,6 +3,7 @@
 #include <iostream>
 
 namespace MAUtility {
-	std::string intToHexString(int your_int);
-	char* stringToCstring(std::string your_String);
+	std::string intToHexString(int your_int);//Tested!
+	char* stringToCstring(std::string your_String);//Not currently Functional
+
 }

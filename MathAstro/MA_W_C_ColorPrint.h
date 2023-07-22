@@ -24,14 +24,15 @@ public:
 		MA_W_C_Color_Print(int colorScheme = 0){ 
 			switch (colorScheme)
 			{
+			case(1):
+				defaultPrintColor = 7;//Default Print is default white (7 = f)
+				defaultBckGrndColor = 0;//Default BkGrd is black (0)
+				system("color 70");
+				consoleBackground, highLightColorNumber = defaultBckGrndColor;
+				break;
 			default:
 				 defaultPrintColor = 15;//Default Print is Bright white (15 = f)
 				 defaultBckGrndColor = 8;//Default BkGrd is Gray (8)
-				
-				 std::string DPC = MAUtility::intToHexString(defaultPrintColor);
-				 std::string DBGC = MAUtility::intToHexString(defaultBckGrndColor);
-				 std::string systemInput = "color "+DPC+DBGC;
-
 				 system("color f8");
 				 consoleBackground, highLightColorNumber = defaultBckGrndColor;
 
@@ -40,7 +41,7 @@ public:
 			
 		
 		}
-	//COMMON_VALUE_TOOLS
+	//COMMON_VALUE_TOOLS==================================================
 		void setConsoleBackground(int backGroundColor);
 
 		void setHighLight(int highLightNum);
@@ -63,6 +64,9 @@ public:
 		void printYellow();//14
 		void printBrightWhite();//15
 			//anything past 15 is a color and a highLight color
+	//PRINT_DEFAULT========================================================
+		/*Prints the default text color given the active color scheme*/
+		void printDefault();
 		
 	//TEST_FUNCTIONS=======================================================
 	void displayAllColors();
