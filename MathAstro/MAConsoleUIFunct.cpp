@@ -4,8 +4,14 @@ MA_W_C_Color_Print UIColors(1);
 
 void mAstroCUI::memeableStartUp()
 {
+	//BUFFER PRIMER
 	system("color 8f");
+	UIColors.printDefault();
+	std::cout << "" << std::endl;
+	system("pause");
 	system("cls");
+	/*Without this the background and text get
+	mismatched for whatever reason*/
 	mAstroCUI::mathAstroTitleScreen();
 	mAstroCUI::squidWardSecurityPage();
 }
@@ -86,7 +92,7 @@ void mAstroCUI::squidWardSecurityPage()
 
 void mAstroCUI::mathAstroTitleScreen()
 {	
-
+	system("cls");
 	UIColors.printBrightRed();
 	std::cout << " ____    ____         _   __ " << std::endl;
 	std::cout << "|_   }  /   _|       / |_[  |" << std::endl;
