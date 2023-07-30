@@ -5,11 +5,9 @@ namespace mAstroKeys {
 //Windows library specific checks
 	bool shiftCheck();
 	bool ctrlCheck();
-	/*
-	Uses windows function to detect
+	/*Uses windows function to detect
 	a key press, included in functions
-	below
-	*/
+	below*/
 
 //Function to find key integers
 

@@ -1,17 +1,43 @@
 #include "MAConsoleUIFunct.h"
 #include "MA_W_C_ColorPrint.h"
-MA_W_C_Color_Print UIColors(1);
+#include"MAKeyReader.h"
+#include "MAUtilityFunct.h"
+MA_W_C_Color_Print UIColors(1);//Default is the good ol Black
 
-void mAstroCUI::memeableStartUp()
+void mAstroCUI::colorSelection()
 {
-	//BUFFER PRIMER
+	system("cls");
+	UIColors.printBrightRed();
+	std::cout << "Select preset colorscheme:"<< std::endl;
+	UIColors.printDefault();
+	std::cout << "	0| Gray" << std::endl;
+	std::cout << "	1| Black" << std::endl;
+	std::cout << "	2| Flash Bang" << std::endl;
+	std::string input;
+	input = mAstroKeys::basicKeyIdentify();
+	//if()
+	int integerSelected = MAUtility::stringToInt(input);
+	//UIColors.setColorScheme(integerSelected);
+
+}
+
+void mAstroCUI::colorPrimer() {
 	system("color 8f");
 	UIColors.printDefault();
 	std::cout << "" << std::endl;
 	system("pause");
 	system("cls");
+}
+
+void mAstroCUI::memeableStartUp()
+{
+	//BUFFER PRIMER
 	/*Without this the background and text get
 	mismatched for whatever reason*/
+
+	colorSelection();
+	colorPrimer();
+
 	mAstroCUI::mathAstroTitleScreen();
 	mAstroCUI::squidWardSecurityPage();
 }

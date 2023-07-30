@@ -21,30 +21,16 @@ private:
 			number*/
 public:
 	//CONSTRUCTOR==========================================================
-		MA_W_C_Color_Print(int colorScheme = 0){ 
-			switch (colorScheme)
-			{
-			case(1):
-				defaultPrintColor = 7;//Default Print is default white (7 = f)
-				defaultBckGrndColor = 0;//Default BkGrd is black (0)
-				system("color 70");
-				consoleBackground, highLightColorNumber = defaultBckGrndColor;
-				break;
-			default:
-				 defaultPrintColor = 15;//Default Print is Bright white (15 = f)
-				 defaultBckGrndColor = 8;//Default BkGrd is Gray (8)
-				 system("color f8");
-				 consoleBackground, highLightColorNumber = defaultBckGrndColor;
-
-			}
-			
-			
-		
+		MA_W_C_Color_Print(int colorScheme = 1){ 
+			setColorScheme(colorScheme);
 		}
+
 	//COMMON_VALUE_TOOLS==================================================
 		void setConsoleBackground(int backGroundColor);
-
 		void setHighLight(int highLightNum);
+
+		void setColorScheme(int selection);
+		/*Contains all preset colorschemes I made*/
 
 	//PRINT_FUNCTIONS=====================================================
 		void printBlack();//0

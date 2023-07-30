@@ -113,6 +113,25 @@ void MA_W_C_Color_Print::displayAllColors()
 	}
 }
 
+void MA_W_C_Color_Print::setColorScheme(int selection)
+{
+	switch (selection)
+	{
+	case(1):
+		defaultPrintColor = 7;//Default Print is default white (7 = f)
+		defaultBckGrndColor = 0;//Default BkGrd is black (0)
+		system("color 70");
+		consoleBackground, highLightColorNumber = defaultBckGrndColor;
+		break;
+	default:
+		defaultPrintColor = 15;//Default Print is Bright white (15 = f)
+		defaultBckGrndColor = 8;//Default BkGrd is Gray (8)
+		system("color f8");
+		consoleBackground, highLightColorNumber = defaultBckGrndColor;
+
+	}
+}
+
 void MA_W_C_Color_Print:: printDefault()
 {
 	int a = (defaultPrintColor + highLightColorNumModifier());

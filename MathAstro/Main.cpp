@@ -11,5 +11,6 @@
 #include "MAUtilityFunct.h"
 
 int main() { 
-	mAstroCUI::memeableStartUp();
+	//mAstroCUI::memeableStartUp();
+	MAUtilityTest::firstSlotStringHyphonChk();
 }
